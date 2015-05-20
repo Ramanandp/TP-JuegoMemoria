@@ -7,11 +7,16 @@
 	<script type='text/javascript' src='scripts/Game.js'></script>
 	<script type='text/javascript' src='scripts/GameOver.js'></script>
 	<script type='text/javascript' src='scripts/Win.js'></script>
+	<script type='text/javascript' src='scripts/Instrucciones.js'></script>
+	<script type='text/javascript' src='scripts/Modo_Original.js'></script>
+	<script type='text/javascript' src='scripts/Modo_Score.js'></script>
+	<script type='text/javascript' src='scripts/Modo_Practica.js'></script>
 	<title>Juego Cartas</title>
 </head>
 <body>
 <script type='text/javascript'>
-	window.onload = function(){
+	window.onload = function()
+	{
 		var game = new Phaser.Game(800,600,Phaser.AUTO);
 		var Global = {};
 		game.state.add('Boost',Boost);
@@ -20,6 +25,10 @@
 		game.state.add('Game',Game);
 		game.state.add('GameOver',GameOver);
 		game.state.add('Win',Win);
+		game.state.add('Instrucciones',Instrucciones);
+		game.state.add('Modo_Original',Modo_Original);
+		game.state.add('Modo_Score',Modo_Score);
+		game.state.add('Modo_Practica',Modo_Practica);
 		game.state.start('Boost');
 	}
 </script>

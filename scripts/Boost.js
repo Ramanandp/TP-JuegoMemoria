@@ -1,11 +1,17 @@
-Boost = function(game){
+Boost = function(game)
+{
+
 }
 
-Boost.prototype = {
-	preload:function(){
+Boost.prototype = 
+{
+	preload:function()
+	{
 		this.load.image('loading','img/loading-bar.png');
 	},
-	create:function(){
+
+	create:function()
+	{
 		this.state.start('Preloader');
 	}
 }
